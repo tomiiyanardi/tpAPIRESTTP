@@ -13,6 +13,7 @@ public class PersonaService implements BaseService<Persona>{
 
     private PersonaRepository personaRepository;
     public PersonaService(PersonaRepository personaRepository){
+
         this.personaRepository= personaRepository;
     }
     @Override
