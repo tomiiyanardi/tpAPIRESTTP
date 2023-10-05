@@ -1,6 +1,7 @@
 package com.example.demo.controladores;
 
 import com.example.demo.entidades.BaseEntidad;
+import com.example.demo.servicios.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

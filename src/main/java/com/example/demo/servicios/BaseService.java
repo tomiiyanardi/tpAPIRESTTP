@@ -4,7 +4,7 @@ import com.example.demo.entidades.BaseEntidad;
 import java.util.List;
 import java.io.Serializable;
 
-public interface BaseService <E, ID>{
+public interface BaseService <E extends BaseEntidad, ID extends Serializable>{
     public List<E> findAll() throws Exception;
     public E findById(ID id) throws Exception;
     public E save(E entity) throws Exception;

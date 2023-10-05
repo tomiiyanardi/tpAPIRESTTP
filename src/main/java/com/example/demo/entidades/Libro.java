@@ -1,12 +1,12 @@
 package com.example.demo.entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -25,4 +25,7 @@ public class Libro extends BaseEntidad {
     private int paginas;
     @Column(name = "autor")
     private String autor;
+
+    @ManyToMany(cascade = CascadeType.REFRESH)
+    private List<Autor> autores;
 }
