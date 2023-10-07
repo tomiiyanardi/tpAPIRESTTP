@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "e6df97db-35d8-4246-b4dd-646180d1fe8b",
+		"name": "ApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29573399"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/1",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Maximo\",\r\n    \"apellido\": \"Lopez\",\r\n    \"dni\": 1235,\r\n    \"domicilio\": {\r\n        \"calle\": \"Figuerooa\",\r\n        \"numero\": 144,\r\n        \"localidad\": {\r\n                \"id\": 1,\r\n                \"denominacion\": \"Guaymallen\"\r\n                 }\r\n            }\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Maximo\",\r\n    \"apellido\": \"Lopez\",\r\n    \"dni\": 1235,\r\n    \"domicilio\": {\r\n        \"id\": 2,\r\n        \"calle\": \"Figuerooa\",\r\n        \"numero\": 144,\r\n        \"localidad\": {\r\n            \"id\": 1,\r\n            \"denominacion\": \"Guaymallen\"\r\n        }\r\n    },\r\n    \"libros\": []\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/2",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/1",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autores",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/basedatos/autores/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tirry\",\r\n    \"apellido\": \"Juarez\",\r\n    \"biografia\": \"Hola hola chau\"\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Timon\",\r\n    \"apellido\": \"Juarez\",\r\n    \"biografia\": \"Hola hola chau\"\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/autores/2",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/autores/2",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/localidades/1",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denominacion\": \"Guaymallen\"\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"denominacion\": \"Guaymallen\"\r\n}"
+						},
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/localidades/1",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/localidades/3",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
