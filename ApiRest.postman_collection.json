@@ -148,6 +148,113 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/search?filtro=Tomas",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Tomas"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/page?page=0&size=5&sort=id,asc",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"page"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirest-4153.onrender.com/api/basedatos/personas/searchPaged?filtro=Tomas&page=0&size=5&sort=id,desc",
+							"protocol": "https",
+							"host": [
+								"tpapirest-4153",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Tomas"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
